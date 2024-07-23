@@ -1,0 +1,17 @@
+/* src/components/WeatherDisplay.css */
+.weather-display {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.weather-display h2 {
+  margin: 0 0 10px;
+}
+
+.weather-display p {
+  margin: 5px 0;
+}

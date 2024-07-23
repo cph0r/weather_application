@@ -1,0 +1,21 @@
+// src/components/WeatherDisplay.js
+import React from 'react';
+import PropTypes from 'prop-types';
+import './WeatherDisplay.css';
+
+const WeatherDisplay = ({ weather }) => {
+  return (
+    <div className="weather-display">
+      <h2>{weather.name}</h2>
+      <p>Temperature: {weather.main.temp} °C</p>
+      <p>Weather: {weather.weather[0].description}</p>
+      <p>Humidity: {weather.main.humidity}%</p>
+    </div>
+  );
+};
+
+WeatherDisplay.propTypes = {
+  weather: PropTypes.object.isRequired,
+};
+
+export default WeatherDisplay;
